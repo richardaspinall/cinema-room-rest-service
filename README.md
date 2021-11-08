@@ -16,14 +16,14 @@ https://www.jetbrains.com/academy/
 
 ## Usage
 
-> ### Display all sets in cinema
-> 
+### Display all sets in cinema
+
 > GET `localhost:28852/seats`
 > 
 > `curl --location --request GET 'localhost:28852/seats'`
 
-> ### Purchase a seat
-> 
+### Purchase a seat
+
 > POST `localhost:28852/purchase`
 > 
 > ```
@@ -35,8 +35,8 @@ https://www.jetbrains.com/academy/
 > }'
 > ```
 
-> ### Return a seat
-> 
+### Return a seat
+
 > POST `localhost:28852/return`
 > 
 > ```
@@ -47,8 +47,8 @@ https://www.jetbrains.com/academy/
 > }'
 > ```
 
-> ### Get statistics allocation of seats
-> 
+### Get statistics allocation of seats
+
 > POST `localhost:28852/stats?password=super_secret`
 > 
 > ```

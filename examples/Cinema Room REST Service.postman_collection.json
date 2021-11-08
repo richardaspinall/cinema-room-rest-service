@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "b3e65c2a-680f-4558-992e-172f96be0c12",
+		"name": "Cinema Room REST Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all seats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:28852/seats",
+					"host": [
+						"localhost"
+					],
+					"port": "28852",
+					"path": [
+						"seats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase a seat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"row\": 1,\n    \"column\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:28852/purchase",
+					"host": [
+						"localhost"
+					],
+					"port": "28852",
+					"path": [
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return a seat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:28852/return",
+					"host": [
+						"localhost"
+					],
+					"port": "28852",
+					"path": [
+						"return"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stats on cinema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:28852/stats?password=super_secret",
+					"host": [
+						"localhost"
+					],
+					"port": "28852",
+					"path": [
+						"stats"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "super_secret"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
